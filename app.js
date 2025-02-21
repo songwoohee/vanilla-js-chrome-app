@@ -1,40 +1,24 @@
-const age = 100;
+const title = document.querySelector("div.hello:first-child h1");
 
-function calculateKrAge(ageOfForeigner) {
-  return ageOfForeigner + 2;
+function handleTitleClick() {
+  title.style.color = "blue";
 }
 
-const krAge = calculateKrAge(age);
-console.log(krAge);
+title.addEventListener("click", handleTitleClick);
 
-/* 함수가 그냥 어떤 기능을 수행하는 것이라기보단, 어떤 일을 수행하고 그 결과를 알려주는 것 -> 결과를 준다.
-return을 함으로써 function을 호출하여 값을 준다 */
+console.dir(title);
 
-const caculator = {
-  plus: function (a, b) {
-    return a + b;
-  },
-  minus: function (a, b) {
-    return a - b;
-  },
-  divide: function (a, b) {
-    return a / b;
-  },
-  multiply: function (a, b) {
-    return a * b;
-  },
-};
+function handleMouseEnter() {
+  title.innerText = "mouse is here!";
+}
 
-caculator.plus(10, 20);
-caculator.minus(10, 20);
-caculator.divide(10, 20);
-caculator.multiply(10, 20);
+function handleMouseLeave() {
+  title.innerText = "mouse is gone!";
+}
 
-const plusResult = caculator.plus(10, 20);
-console.log(plusResult);
-const minusResult = caculator.minus(plusResult, 10);
-console.log(minusResult);
-const divideResult = caculator.divide(minusResult, 2);
-console.log(divideResult);
-const multiplyResult = caculator.multiply(plusResult, minusResult);
-console.log(multiplyResult);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
+
+/* Events
+dir을 통해 element를 console에 출력해준다. on이 붙은게 사용 가능한 event listener이다.
+*/
