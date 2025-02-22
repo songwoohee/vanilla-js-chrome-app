@@ -40,3 +40,35 @@ title2.addEventListener("mouseenter", handleMouseEnter);
 
 // 🔹 마우스가 title에서 벗어나면 handleMouseLeave 함수 실행
 title2.addEventListener("mouseleave", handleMouseLeave);
+
+/* 📌 Window Events
+1. `window` 객체는 브라우저 창에서 발생하는 이벤트를 감지할 수 있다.
+2. 대표적인 `window` 이벤트로는 `resize`, `copy`, `offline`, `online` 등이 있다.
+3. 예시에서는 창 크기 변경 시 배경색이 tomato로 바뀌고, 복사, 네트워크 상태 변경 등의 이벤트를 감지한다.
+*/
+
+// 🔹 창 크기 변경 시 배경색 변경
+function handleWindowResize() {
+  document.body.style.backgroundColor = "tomato";
+}
+
+// 🔹 사용자가 복사(Ctrl+C)할 때 알림
+function handleWindowCopy() {
+  alert("copier!");
+}
+
+// 🔹 네트워크 연결이 끊겼을 때 알림
+function handleWindowOffline() {
+  alert("SOS No Wifi!");
+}
+
+// 🔹 네트워크가 복구되었을 때 알림
+function handleWindowOnline() {
+  alert("Wifi Good!");
+}
+
+// 🔹 window 이벤트 리스너 추가
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
