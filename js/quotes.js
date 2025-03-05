@@ -1,13 +1,12 @@
 /*
-Math 함수
-Math.round()
-Math.ceil()
-Math.floor()
-Math.random()
-Math.max()
-Math.min()
-Math.abs()
-Math.sqrt()
+Math.round(x): x를 반올림하여 가장 가까운 정수를 반환한다. 예를 들어, Math.round(4.7)의 결과는 5이다.
+Math.ceil(x): x를 올림하여 가장 가까운 정수를 반환한다. 예를 들어, Math.ceil(4.1)의 결과는 5이다.
+Math.floor(x): x를 내림하여 가장 가까운 정수를 반환한다. 예를 들어, Math.floor(4.9)의 결과는 4이다.
+Math.random(): 0 이상 1 미만의 랜덤한 숫자를 반환한다. 예를 들어, Math.random()을 실행하면 0.12345...와 같은 숫자가 나올 수 있다.
+Math.max(a, b, c, ...): 주어진 숫자 중 가장 큰 값을 반환한다. 예를 들어, Math.max(10, 5, 8)의 결과는 10이다.
+Math.min(a, b, c, ...): 주어진 숫자 중 가장 작은 값을 반환한다. 예를 들어, Math.min(10, 5, 8)의 결과는 5이다.
+Math.abs(x): x의 절대값을 반환한다. 예를 들어, Math.abs(-7)의 결과는 7이다.
+Math.sqrt(x): x의 제곱근을 반환한다. 예를 들어, Math.sqrt(9)의 결과는 3이다.
 */
 
 const quotes = [
