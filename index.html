@@ -3,38 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Vanilla JS</title>
+    <title>TodoList</title>
   </head>
   <body>
     <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="what is your name?"
-      />
+      <input required maxlength="15" type="text" placeholder="your name" />
       <button>login</button>
     </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="write a to do and press enter" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+
+    <div class="container">
+      <div id="greeting" class="hidden"></div>
+
+      <div id="today">0000.00.00</div>
+      <div id="clock">00:00:00</div>
+
+      <div id="weather">
+        <div id="location"></div>
+        <div id="weatherStatus"></div>
+        <div id="temp"></div>
+      </div>
+
+      <div class="todo">
+        <form id="todo-form">
+          <h2>To do List</h2>
+          <input type="text" placeholder="write your list" />
+        </form>
+
+        <ul id="todo-list"></ul>
+
+        <div id="quote">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
+    <script src="finalAssignment/background.js"></script>
+    <script src="finalAssignment/login.js"></script>
+    <script src="finalAssignment/clock.js"></script>
+    <script src="finalAssignment/weather.js"></script>
+    <script src="finalAssignment/todo.js"></script>
+    <script src="finalAssignment/wiseSaying.js"></script>
+    <script src="finalAssignment/today.js"></script>
   </body>
 </html>
